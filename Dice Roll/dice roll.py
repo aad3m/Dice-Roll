@@ -1,4 +1,5 @@
 import random
+import time
 
 min_value = 1
 max_value = 6
@@ -7,6 +8,7 @@ while roll_again == "y":
     print("Rolling the dices...")
     value1 = random.randint(min_value, max_value)
     value2 = random.randint(min_value, max_value)
+    time.sleep(2)
     print(f'Rolled {value1} & {value2}')
     roll_again = input("\nWant to roll again? (y/n): ")
     roll_again = roll_again.lower()
